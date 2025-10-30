@@ -602,10 +602,10 @@ a {
 }
 
 /* ======= Espaço entre parágrafo introdutório e lista (Seção Benefícios) ======= */
-#beneficios .tour__content > p { 
+#benefits .tour__content > p { 
   margin-bottom: 24px;   /* ajuste para 28/32px se quiser mais */
 }
-#beneficios .check-list { 
+#benefits .check-list { 
   gap: 22px;             /* mais respiro entre os itens */
 }
 /* ========================================================================= */
@@ -905,3 +905,4 @@ a {
   /* manter respiro em telas pequenas */
   .card--feature { padding: 40px 24px 24px 60px; }
 }
+
