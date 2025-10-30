@@ -601,6 +601,15 @@ a {
   color: var(--color-primary);
 }
 
+/* ======= Espaço entre parágrafo introdutório e lista (Seção Benefícios) ======= */
+#beneficios .tour__content > p { 
+  margin-bottom: 24px;   /* ajuste para 28/32px se quiser mais */
+}
+#beneficios .check-list { 
+  gap: 22px;             /* mais respiro entre os itens */
+}
+/* ========================================================================= */
+
 .results {
   background: linear-gradient(160deg, rgba(0, 71, 187, 0.08), rgba(15, 28, 63, 0.08));
 }
@@ -892,3 +901,7 @@ a {
     font-size: 1rem;
     top: 16px;
   }
+
+  /* manter respiro em telas pequenas */
+  .card--feature { padding: 40px 24px 24px 60px; }
+}
