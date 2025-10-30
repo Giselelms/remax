@@ -226,7 +226,7 @@ a {
 .hero__panel-card li {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px; /* ↑ mais espaço entre emoji e texto */
   font-weight: 500;
 }
 
@@ -441,17 +441,19 @@ a {
   color: rgba(15, 28, 63, 0.7);
 }
 
+/* ==== AUMENTAR ESPAÇO ENTRE ÍCONE E TEXTO DOS CARDS ==== */
 .card--feature {
-  padding-top: 48px;
+  padding: 48px 32px 32px 84px; /* topo, direita, baixo, ESQUERDA maior */
   position: relative;
   overflow: hidden;
 }
 
 .card__icon {
   position: absolute;
-  inset: 18px auto auto 24px;
+  inset: 18px auto auto 32px; /* ícone fica mais à esquerda */
   font-size: 1.8rem;
 }
+/* ======================================================= */
 
 .feature-list {
   list-style: none;
@@ -858,6 +860,9 @@ a {
     height: 48px;
     top: 18px;
   }
+
+  /* manter respiro em telas médias */
+  .card--feature { padding: 44px 28px 28px 72px; }
 }
 
 @media (max-width: 520px) {
@@ -887,4 +892,7 @@ a {
     font-size: 1rem;
     top: 16px;
   }
+
+  /* manter respiro em telas pequenas */
+  .card--feature { padding: 40px 24px 24px 60px; }
 }
